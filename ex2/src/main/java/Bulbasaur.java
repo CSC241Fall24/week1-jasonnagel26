@@ -58,14 +58,16 @@ public class Bulbasaur {
     // equals method
     @Override
     public boolean equals(Object obj) {
-        if(this.equals(obj)){
+        /*if(this.equals(obj)){
             return true;
         }else{
             return false;
         }
+            */
         // TODO: Implement this method
         // Compare this Bulbasaur object with another object
         // Placeholder return value
+        return false;
     }
 
     // copy method
