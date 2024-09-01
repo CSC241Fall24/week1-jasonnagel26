@@ -52,15 +52,16 @@ public class Bulbasaur {
     public String toString() {
         // TODO: Implement this method
         // Return a string representation of the Bulbasaur object
-        return ("Level: " + level + "\nID: " + id); // Placeholder return value
+        return ("Level: " + level + ", ID: " + id); // Placeholder return value
     }
 
     // equals method
-    @Override
-    public boolean equals(Object obj) {
-        if(this.equals(obj)){
+   
+    public boolean equals(Bulbasaur obj) {
+        if(level == obj.getLevel()){
             return true;
-        }else{
+        }
+        else{
             return false;
         }
         // TODO: Implement this method
@@ -73,7 +74,7 @@ public class Bulbasaur {
         // TODO: Implement this method
         // Create and return a new Bulbasaur object with the same id and level
         Bulbasaur bulb = new Bulbasaur();
-        bulb.setLevel(this.level);
+        bulb.setLevel(level);
         return bulb; // Placeholder return value
     }
 }
